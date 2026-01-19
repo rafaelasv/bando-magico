@@ -1,26 +1,51 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-roboto-slab: 'Roboto Slab', serif;
+}
+.font-roboto {
+  font-family: var(--font-roboto-slab) !important;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/paper.jpg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* CONTROLA A OPACIDADE SÓ DO PAPEL AQUI */
+  z-index: -1;   /* Joga o papel para trás de TUDO */
+  pointer-events: none; /* Garante que o papel não atrapalhe os cliques */
+}
+
+/* Reset de Links da Navbar */
+nav a, 
+nav a:visited, 
+nav a:active {
+  color: #000000 !important; 
+  text-decoration: none !important; /* Remove o sublinhado */
+  outline: none;
+}
+
+nav a:hover {
+  color: #F09E86 !important; 
+  text-decoration: none !important;
+}
+
+/* Forçando a aplicação da fonte de giz */
+.font-chalk {
+  font-family: var(--font-chalkiez), cursive !important;
 }
