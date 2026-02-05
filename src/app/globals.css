@@ -37,8 +37,6 @@ nav a:active {
   color: #000000 !important; 
   text-decoration: none !important; /* Remove o sublinhado */
   outline: none;
-  display: inline-block !important;
-  white-space: nowrap !important;
 }
 
 nav a:hover {
@@ -46,17 +44,6 @@ nav a:hover {
   text-decoration: none !important;
 }
 
-/* Garante espaço entre elementos nav */
-nav > div {
-  width: 100%;
-  display: flex !important;
-}
-
-nav div > * {
-  flex-shrink: 0;
-}
-
-/* Forçando a aplicação da fonte de giz */
 .font-chalk {
   font-family: var(--font-chalkiez), cursive !important;
 }
