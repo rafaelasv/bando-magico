@@ -7,15 +7,15 @@ export default function Navbar() {
       style={{ backgroundColor: "#ffffff" }} // Branco sólido garantido
     >
       
-      {/* Container dos links com gap aumentado para criar o espaço entre eles */}
-      <div className="flex items-center justify-center text-base font-medium gap-20">
-        <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors">
+      {/* Container dos links com espaçamento */}
+      <div className="flex items-center justify-center text-base font-medium">
+        <Link href="/" style={{ margin: "0 20px" }} className="text-gray-700 hover:text-gray-900 transition-colors">
           Início
         </Link>
-        <Link href="/gerador" className="text-gray-700 hover:text-gray-900 transition-colors">
+        <Link href="/gerador" style={{ margin: "0 20px" }} className="text-gray-700 hover:text-gray-900 transition-colors">
           Gerador
         </Link>
-        <Link href="/sobre" className="text-gray-700 hover:text-gray-900 transition-colors">
+        <Link href="/sobre" style={{ margin: "0 20px" }} className="text-gray-700 hover:text-gray-900 transition-colors">
           Sobre
         </Link>
       </div>
