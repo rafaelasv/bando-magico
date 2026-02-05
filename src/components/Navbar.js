@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav
-      className="fixed top-48 left-1/2 -translate-x-1/2 w-[90%] max-w-[1000px] h-[60px] flex justify-center items-center z-[9999] font-roboto rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.18)] border-none"
-      style={{ backgroundColor: "#ffffff" }} // Branco sólido garantido
+      className="fixed left-1/2 -translate-x-1/2 w-[90%] max-w-[1000px] h-[60px] flex justify-center items-center z-[9999] font-roboto rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.18)] border-none"
+      style={{ backgroundColor: "#ffffff", top: "15px" }} // Branco sólido garantido
     >
       
       {/* Container dos links com espaçamento */}
