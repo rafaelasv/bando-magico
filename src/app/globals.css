@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --color-papel: #F7F5EB;
+  --color-amarelo-psita: #F9E29C;
+  --color-coral-bochecha: #F09E86;
+  --color-verde-natureza: #A8C69F;
+  --color-grafite-lapis: #6B665F;
+
+  --font-roboto: var(--font-roboto-slab), serif;
+  --font-chalk: var(--font-chalkiez), cursive;
+}
+
 :root {
   --font-roboto-slab: 'Roboto Slab', serif;
 }
+
 .font-roboto {
   font-family: var(--font-roboto-slab) !important;
 }
@@ -31,17 +43,8 @@ body::before {
 }
 
 /* Reset de Links da Navbar */
-nav a, 
-nav a:visited, 
-nav a:active {
-  color: #000000 !important; 
-  text-decoration: none !important; /* Remove o sublinhado */
-  outline: none;
-}
-
-nav a:hover {
-  color: #F09E86 !important; 
-  text-decoration: none !important;
+nav a {
+  text-decoration: none;
 }
 
 .font-chalk {
