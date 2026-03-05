@@ -1,4 +1,4 @@
-import { Roboto_Slab } from "next/font/google"; 
+import { Roboto_Slab, Nunito } from "next/font/google";
 import localFont from "next/font/local"; 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -8,15 +8,21 @@ const chalkiez = localFont({
   variable: "--font-chalkiez",
 });
 
-const robotoSlab = Roboto_Slab({ 
+const robotoSlab = Roboto_Slab({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-roboto-slab", 
+  variable: "--font-roboto-slab",
+});
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-nunito",
 });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br" className={`${chalkiez.variable} ${robotoSlab.variable}`}>
+    <html lang="pt-br" className={`${chalkiez.variable} ${robotoSlab.variable} ${nunito.variable}`}>
       <body className="antialiased">
         <Navbar />
         {children}

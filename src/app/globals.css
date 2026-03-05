@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,4 +51,12 @@ nav a {
 
 .font-chalk {
   font-family: var(--font-chalkiez), cursive !important;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif !important;
 }
