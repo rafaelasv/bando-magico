@@ -92,6 +92,57 @@ export default function Home() {
           />
         </svg>
 
+        {/* Conteúdo */}
+        <div style={{ padding: "60px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "48px" }}>
+
+          {/* Título */}
+          <h2 className="font-roboto" style={{ fontSize: "42px", fontWeight: "700", color: "#fff", textAlign: "center" }}>
+            Você sabia?
+          </h2>
+
+          {/* Curiosidades */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px", maxWidth: "900px" }}>
+
+            {[
+              { titulo: "Originárias da Austrália", texto: "Vivem em bandos nas savanas e florestas abertas do interior australiano." },
+              { titulo: "Adoram música", texto: "Muitas aprendem a assoviar músicas e algumas até cantam com a família." },
+              { titulo: "São monogâmicas", texto: "Na natureza, escolhem um parceiro para a vida toda e são muito leais." },
+              { titulo: "Têm pesadelos", texto: "Podem acordar assustadas à noite e precisar de carinho pra se acalmar." },
+              { titulo: "A crista fala por elas", texto: "Crista levantada significa animação. Deitada pode indicar relaxamento ou alerta." },
+              { titulo: "Adoram pipoca", texto: "São loucas por pipoca — mas só sem sal e sem óleo, por favor!" },
+            ].map(({ titulo, texto }) => (
+              <div key={titulo} style={{
+                backgroundColor: "rgba(255,255,255,0.25)",
+                borderRadius: "16px",
+                padding: "24px 28px",
+                maxWidth: "100%",
+                display: "flex",
+                flexDirection: "column",
+                gap: "8px",
+              }}>
+                <p style={{ fontFamily: "'Raleway', sans-serif", fontWeight: "700", fontSize: "16px", color: "#fff", letterSpacing: "0.03em" }}>{titulo}</p>
+                <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "13px", color: "#fff", lineHeight: "1.6" }}>{texto}</p>
+              </div>
+            ))}
+
+          </div>
+        </div>
+
+      </section>
+
+      {/* SEÇÃO HOMENAGEM - JUJUBA */}
+      <section style={{ backgroundColor: "#E8E6E1", minHeight: "400px" }} className="w-full">
+
+        {/* Conteúdo - a preencher */}
+        <div style={{ padding: "60px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
+          <h2 className="font-chalk" style={{ fontSize: "48px", color: "#6B665F", textAlign: "center" }}>
+            Jujuba
+          </h2>
+          <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#6B665F", textAlign: "center" }}>
+            em memória
+          </p>
+        </div>
+
       </section>
 
     </main>
