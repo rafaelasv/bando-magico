@@ -30,20 +30,20 @@ export default function Home() {
 
           {/* Botões dentro do hero */}
           <div className="flex flex-row" style={{ marginTop: "32px", gap: "20px" }}>
-            <button className="font-chalk hover:scale-105 transition-all flex items-center justify-center" style={{ backgroundColor: "#E6A15C", color: "#fff", fontSize: "22px", padding: "10px 28px", border: "none", borderRadius: "16px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
+            <a href="#conheca-o-bando" className="font-chalk hover:scale-105 transition-all flex items-center justify-center" style={{ backgroundColor: "#E6A15C", color: "#fff", fontSize: "22px", padding: "10px 28px", border: "none", borderRadius: "16px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", textDecoration: "none" }}>
               Conhecer a Turma
-            </button>
+            </a>
 
-            <button className="font-chalk hover:scale-105 transition-all flex items-center justify-center" style={{ backgroundColor: "transparent", color: "#E6A15C", fontSize: "22px", padding: "10px 28px", border: "2px solid #E6A15C", borderRadius: "16px" }}>
+            <Link href="/gerador" className="font-chalk hover:scale-105 transition-all flex items-center justify-center" style={{ backgroundColor: "transparent", color: "#E6A15C", fontSize: "22px", padding: "10px 28px", border: "2px solid #E6A15C", borderRadius: "16px", textDecoration: "none" }}>
               Gerar Nomes
-            </button>
+            </Link>
           </div>
         </div>
 
       </section>
 
       {/* SEÇÃO: CONHEÇA O BANDO */}
-      <section style={{ backgroundColor: "#F7F5EB", paddingTop: "80px", paddingBottom: "80px" }} className="w-full px-6 flex flex-col items-center">
+      <section id="conheca-o-bando" style={{ backgroundColor: "#F7F5EB", paddingTop: "80px", paddingBottom: "80px" }} className="w-full px-6 flex flex-col items-center">
 
         {/* Título */}
         <h2 className="font-roboto text-2xl font-bold text-grafite-lapis tracking-widest mb-3">
