@@ -28,7 +28,7 @@ export default function Navbar() {
                 className={`pb-1 transition-colors duration-200 ${
                   isActive
                     ? "text-grafite-lapis border-b-2 border-grafite-lapis"
-                    : "text-grafite-lapis hover:text-coral-bochecha"
+                    : "text-grafite-lapis hover:text-[#E6A15C]"
                 }`}
               >
                 {label}

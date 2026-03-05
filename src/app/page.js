@@ -25,16 +25,16 @@ export default function Home() {
           </h1>
           
           <p className="text-xl md:text-2xl text-[#4A4A4A] font-roboto mt-[-10px]">
-            Aventuras Encantadas de Jujuba, Theo e Yuki
+            Aventuras Encantadas das psitas Jujuba, Theo e Yuki!
           </p>
 
           {/* Botões dentro do hero */}
-          <div className="flex flex-row gap-4 mt-8">
-            <button className="w-[170px] h-[45px] bg-[#A8C69F] text-[#1D3A0A] font-bold rounded-full shadow-lg hover:scale-105 transition-all font-roboto text-[16px] flex items-center justify-center border-none outline-none">
+          <div className="flex flex-row" style={{ marginTop: "32px", gap: "20px" }}>
+            <button className="font-chalk hover:scale-105 transition-all flex items-center justify-center" style={{ backgroundColor: "#E6A15C", color: "#fff", fontSize: "22px", padding: "10px 28px", border: "none", borderRadius: "16px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
               Conhecer a Turma
             </button>
 
-            <button className="w-[170px] h-[45px] bg-[#A8C69F] text-[#1D3A0A] font-bold rounded-full shadow-lg hover:scale-105 transition-all font-roboto text-[16px] flex items-center justify-center border-none outline-none">
+            <button className="font-chalk hover:scale-105 transition-all flex items-center justify-center" style={{ backgroundColor: "transparent", color: "#E6A15C", fontSize: "22px", padding: "10px 28px", border: "2px solid #E6A15C", borderRadius: "16px" }}>
               Gerar Nomes
             </button>
           </div>
@@ -57,25 +57,25 @@ export default function Home() {
         <div className="flex flex-row justify-center flex-wrap" style={{ gap: "60px" }}>
 
           {/* Jujuba */}
-          <div className="flex flex-col items-center">
+          <Link href="/jujuba" className="flex flex-col items-center hover:scale-105 transition-transform duration-200" style={{ textDecoration: "none" }}>
             <img src="/jujuba-portrait.png" alt="Jujuba" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="mb-4" />
-            <p className="font-roboto font-bold text-grafite-lapis tracking-widest uppercase text-sm mb-1">Jujuba</p>
-            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#F09E86" }}>Juju</p>
-          </div>
+            <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Jujuba</p>
+            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Juju</p>
+          </Link>
 
           {/* Theo */}
-          <div className="flex flex-col items-center">
+          <Link href="/theo" className="flex flex-col items-center hover:scale-105 transition-transform duration-200" style={{ textDecoration: "none" }}>
             <img src="/theo-portrait.png" alt="Theo" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="mb-4" />
-            <p className="font-roboto font-bold text-grafite-lapis tracking-widest uppercase text-sm mb-1">Theo</p>
-            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#F09E86" }}>Sapinho</p>
-          </div>
+            <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Theo</p>
+            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Sapinho</p>
+          </Link>
 
           {/* Yuki */}
-          <div className="flex flex-col items-center">
+          <Link href="/yuki" className="flex flex-col items-center hover:scale-105 transition-transform duration-200" style={{ textDecoration: "none" }}>
             <img src="/yuki-portrait.png" alt="Yuki" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="mb-4" />
-            <p className="font-roboto font-bold text-grafite-lapis tracking-widest uppercase text-sm mb-1">Yuki</p>
-            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#F09E86" }}>Pupuki</p>
-          </div>
+            <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Yuki</p>
+            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Pupuki</p>
+          </Link>
 
         </div>
 
