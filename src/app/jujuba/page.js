@@ -11,7 +11,7 @@ export default function Jujuba() {
       age="1 ano e alguns meses"
       personality={["brincalhão", "cantor", "arteiro"]}
       favorites={["🍿 pipoca", "✨ tudo que aparecia"]}
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula purus nec felis facilisis, vel tincidunt arcu dignissim. Pellentesque habitant morbi tristique senectus et malesuada fames ac turpis egestas."
+      description="O querido Jujuba foi quem apresentou o mundo das calopsitas para a criadora do site. Ele era muito inteligente, andava e voava atrás pela casa e a chamava, eram melhores amigos. Ele aprendeu a imitar sirene de polícia sozinho e compôs várias canções originais. Extremamente talentoso, companheiro, brincalhão. Jujuba vive no céu há 5 anos, esperando reencontrar sua melhor amiga um dia."
       next={{ href: "/theo", name: "Theo" }}
     />
   );
