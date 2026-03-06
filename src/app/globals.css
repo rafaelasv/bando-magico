@@ -64,3 +64,40 @@ nav a {
 .font-raleway {
   font-family: 'Raleway', sans-serif !important;
 }
+
+/* Hover nas fotos dos cards das psitas */
+.psita-foto {
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.psita-foto:hover {
+  transform: translateY(-6px) scale(1.02);
+  filter: drop-shadow(0 12px 20px rgba(0,0,0,0.2));
+}
+
+/* Botões do hero */
+.btn-hero {
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.25s ease;
+}
+.btn-hero:hover {
+  transform: translateY(-3px) scale(1.04);
+}
+
+/* Brilhos no botão "Conhecer a Turma" */
+.btn-hero.btn-brilhos::after {
+  content: "✦";
+  position: absolute;
+  right: 14px;
+  top: 5px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+.btn-hero.btn-brilhos::before {
+  content: "✦";
+  position: absolute;
+  left: 14px;
+  bottom: 5px;
+  font-size: 11px;
+  opacity: 0.6;
+}

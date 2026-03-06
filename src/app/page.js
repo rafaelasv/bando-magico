@@ -30,11 +30,11 @@ export default function Home() {
 
           {/* Botões dentro do hero */}
           <div className="flex flex-row" style={{ marginTop: "32px", gap: "20px" }}>
-            <a href="#conheca-o-bando" className="font-chalk hover:scale-105 transition-all flex items-center justify-center" style={{ backgroundColor: "#E6A15C", color: "#fff", fontSize: "22px", padding: "10px 28px", border: "none", borderRadius: "16px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", textDecoration: "none" }}>
+            <a href="#conheca-o-bando" className="btn-hero btn-brilhos font-chalk flex items-center justify-center" style={{ backgroundColor: "#E6A15C", color: "#fff", fontSize: "22px", padding: "10px 28px", border: "none", textDecoration: "none" }}>
               Conhecer a Turma
             </a>
 
-            <Link href="/gerador" className="font-chalk hover:scale-105 transition-all flex items-center justify-center" style={{ backgroundColor: "transparent", color: "#E6A15C", fontSize: "22px", padding: "10px 28px", border: "2px solid #E6A15C", borderRadius: "16px", textDecoration: "none" }}>
+            <Link href="/gerador" className="btn-hero font-chalk flex items-center justify-center" style={{ backgroundColor: "transparent", color: "#E6A15C", fontSize: "22px", padding: "10px 28px", border: "2px solid #E6A15C", textDecoration: "none" }}>
               Gerar Nomes
             </Link>
           </div>
@@ -57,22 +57,22 @@ export default function Home() {
         <div className="flex flex-row justify-center flex-wrap" style={{ gap: "60px" }}>
 
           {/* Jujuba */}
-          <Link href="/jujuba" className="flex flex-col items-center hover:scale-105 transition-transform duration-200" style={{ textDecoration: "none" }}>
-            <img src="/jujuba-portrait.png" alt="Jujuba" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="mb-4" />
+          <Link href="/jujuba" className="flex flex-col items-center" style={{ textDecoration: "none" }}>
+            <img src="/jujuba-portrait.png" alt="Jujuba" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
             <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Jujuba</p>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Juju</p>
           </Link>
 
           {/* Theo */}
-          <Link href="/theo" className="flex flex-col items-center hover:scale-105 transition-transform duration-200" style={{ textDecoration: "none" }}>
-            <img src="/theo-portrait.png" alt="Theo" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="mb-4" />
+          <Link href="/theo" className="flex flex-col items-center" style={{ textDecoration: "none" }}>
+            <img src="/theo-portrait.png" alt="Theo" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
             <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Theo</p>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Sapinho</p>
           </Link>
 
           {/* Yuki */}
-          <Link href="/yuki" className="flex flex-col items-center hover:scale-105 transition-transform duration-200" style={{ textDecoration: "none" }}>
-            <img src="/yuki-portrait.png" alt="Yuki" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="mb-4" />
+          <Link href="/yuki" className="flex flex-col items-center" style={{ textDecoration: "none" }}>
+            <img src="/yuki-portrait.png" alt="Yuki" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
             <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Yuki</p>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Pupuki</p>
           </Link>
