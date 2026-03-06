@@ -65,6 +65,12 @@ nav a {
   font-family: 'Raleway', sans-serif !important;
 }
 
+/* Animação flutuante das psitas no livro */
+@keyframes psita-float {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(-10px); }
+}
+
 /* Hover nas fotos dos cards das psitas */
 .psita-foto {
   transition: transform 0.25s ease, filter 0.25s ease;

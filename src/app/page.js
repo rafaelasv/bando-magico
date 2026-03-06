@@ -5,8 +5,8 @@ export default function Home() {
     <main className="flex flex-col relative overflow-hidden bg-white">
       
       {/* HERO SECTION COM IMAGEM DE FUNDO */}
-      <section className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/header-psitas.png')"}}>
-        
+      <section className="relative w-full min-h-screen bg-cover bg-no-repeat" style={{backgroundImage: "url('/header-psitas.png')", backgroundPosition: "center 40%"}}>
+
         {/* Overlay para legibilidade */}
         <div className="absolute inset-0 bg-white/45"></div>
 
@@ -47,7 +47,7 @@ export default function Home() {
 
         {/* Título */}
         <h2 className="font-roboto text-2xl font-bold text-grafite-lapis tracking-widest mb-3">
-          Conheça o Bando
+          ✦ Conheça o Bando ✦
         </h2>
 
         {/* Linha decorativa tracejada */}
@@ -96,8 +96,8 @@ export default function Home() {
         <div style={{ padding: "60px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "48px" }}>
 
           {/* Título */}
-          <h2 className="font-roboto" style={{ fontSize: "42px", fontWeight: "700", color: "#fff", textAlign: "center" }}>
-            Você sabia?
+          <h2 className="font-roboto text-2xl font-bold tracking-widest" style={{ color: "#fff", textAlign: "center" }}>
+            ✦ Curiosidades ✦
           </h2>
 
           {/* Curiosidades */}

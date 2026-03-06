@@ -75,6 +75,15 @@ export default function Gerador() {
         alignItems: "center",
         justifyContent: "center",
       }}>
+        {/* Psita artista — fora do frame */}
+        <img src="/psita-artista.png" alt="Psita artista" style={{
+          position: "absolute",
+          left: "-140px",
+          bottom: "-5px",
+          width: "260px",
+          pointerEvents: "none",
+        }} />
+
         {/* Frame como imagem de fundo */}
         <img src="/frame-generator.png" alt="" style={{
           position: "absolute",
