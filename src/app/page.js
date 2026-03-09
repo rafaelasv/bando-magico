@@ -93,7 +93,7 @@ export default function Home() {
         </svg>
 
         {/* Conteúdo */}
-        <div style={{ padding: "60px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "48px" }}>
+        <div style={{ padding: "60px 40px 180px", display: "flex", flexDirection: "column", alignItems: "center", gap: "48px" }}>
 
           {/* Título */}
           <h2 className="font-roboto text-2xl font-bold tracking-widest" style={{ color: "#fff", textAlign: "center" }}>
@@ -101,27 +101,41 @@ export default function Home() {
           </h2>
 
           {/* Curiosidades */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px", maxWidth: "900px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px", maxWidth: "1100px", width: "100%" }}>
 
             {[
-              { titulo: "Originárias da Austrália", texto: "Vivem em bandos nas savanas e florestas abertas do interior australiano." },
-              { titulo: "Adoram música", texto: "Muitas aprendem a assoviar músicas e algumas até cantam com a família." },
-              { titulo: "São monogâmicas", texto: "Na natureza, escolhem um parceiro para a vida toda e são muito leais." },
-              { titulo: "Têm pesadelos", texto: "Podem acordar assustadas à noite e precisar de carinho pra se acalmar." },
-              { titulo: "A crista fala por elas", texto: "Crista levantada significa animação. Deitada pode indicar relaxamento ou alerta." },
-              { titulo: "Adoram pipoca", texto: "São loucas por pipoca — mas só sem sal e sem óleo, por favor!" },
-            ].map(({ titulo, texto }) => (
+              { imagem: "/psita-australia.png", titulo: "Originárias da Austrália", texto: "Vivem em bandos nas savanas e florestas abertas do interior australiano." },
+              { imagem: "/psita-cantora.png", titulo: "Adoram música", texto: "Muitas aprendem a assoviar músicas e algumas até cantam com a família." },
+              { imagem: "/psita-monogamica.png", titulo: "São monogâmicas", texto: "Na natureza, escolhem um parceiro para a vida toda e são muito leais." },
+              { imagem: "/psita-pesadelos.png", titulo: "Têm pesadelos", texto: "Podem acordar assustadas à noite e precisar de carinho pra se acalmar." },
+              { imagem: "/psita-topete.png", titulo: "A crista fala por elas", texto: "Crista levantada significa animação. Deitada pode indicar relaxamento ou alerta." },
+              { imagem: "/psita-popoca.png", titulo: "Adoram pipoca", texto: "São loucas por pipoca — mas só sem sal e sem óleo, por favor!" },
+            ].map(({ imagem, titulo, texto }) => (
               <div key={titulo} style={{
                 backgroundColor: "rgba(255,255,255,0.25)",
                 borderRadius: "16px",
-                padding: "24px 28px",
+                padding: "24px 28px 24px 24px",
                 maxWidth: "100%",
                 display: "flex",
-                flexDirection: "column",
-                gap: "8px",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "space-between",
+                position: "relative",
+                overflow: "visible",
+                minHeight: "130px",
               }}>
-                <p style={{ fontFamily: "'Raleway', sans-serif", fontWeight: "700", fontSize: "16px", color: "#fff", letterSpacing: "0.03em" }}>{titulo}</p>
-                <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "13px", color: "#fff", lineHeight: "1.6" }}>{texto}</p>
+                <div style={{ display: "flex", flexDirection: "column", gap: "6px", flex: 1, paddingRight: "12px" }}>
+                  <p style={{ fontFamily: "'Raleway', sans-serif", fontWeight: "700", fontSize: "15px", color: "#fff", letterSpacing: "0.03em" }}>{titulo}</p>
+                  <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "12px", color: "#fff", lineHeight: "1.6" }}>{texto}</p>
+                </div>
+                <img src={imagem} alt={titulo} style={{
+                  width: "140px",
+                  height: "140px",
+                  objectFit: "contain",
+                  flexShrink: 0,
+                  marginRight: "-24px",
+                  alignSelf: "center",
+                }} />
               </div>
             ))}
 
