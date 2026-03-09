@@ -19,7 +19,7 @@ Projeto pessoal desenvolvido para praticar React e Tailwind CSS, com foco em ide
 - [x] Navbar com borda em escalopos e active state
 - [x] Seção "Conheça o Bando" com cards das psitas
 - [x] Páginas individuais de cada calopsita
-- [ ] Gerador de nomes
+- [x] Gerador de nomes
 - [ ] Página Sobre
 - [ ] Responsividade mobile
 
