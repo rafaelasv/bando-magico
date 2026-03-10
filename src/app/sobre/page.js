@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Sobre() {
   return (
     <main style={{ backgroundColor: "#F7F5EB", minHeight: "100vh" }}>
@@ -45,10 +47,12 @@ export default function Sobre() {
         </div>
 
         <div className="jujuba-layout" style={{ display: "flex", alignItems: "center", gap: "48px" }}>
-          <img
+          <Image
             src="/jujuba-memoriam.jpg"
             alt="Jujuba em aquarela"
-            style={{ width: "360px", height: "420px", flexShrink: 0, objectFit: "cover", borderRadius: "50%" }}
+            width={360}
+            height={420}
+            style={{ flexShrink: 0, objectFit: "cover", borderRadius: "50%" }}
           />
           <div style={{ display: "flex", flexDirection: "column", gap: "0px" }}>
             {[

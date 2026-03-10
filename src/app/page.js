@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -58,21 +59,21 @@ export default function Home() {
 
           {/* Jujuba */}
           <Link href="/jujuba" className="flex flex-col items-center" style={{ textDecoration: "none" }}>
-            <img src="/jujuba-portrait.png" alt="Jujuba" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
+            <Image src="/jujuba-portrait.png" alt="Jujuba" width={260} height={320} style={{ objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
             <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Jujuba</p>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Juju</p>
           </Link>
 
           {/* Theo */}
           <Link href="/theo" className="flex flex-col items-center" style={{ textDecoration: "none" }}>
-            <img src="/theo-portrait.png" alt="Theo" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
+            <Image src="/theo-portrait.png" alt="Theo" width={260} height={320} style={{ objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
             <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Theo</p>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Sapinho</p>
           </Link>
 
           {/* Yuki */}
           <Link href="/yuki" className="flex flex-col items-center" style={{ textDecoration: "none" }}>
-            <img src="/yuki-portrait.png" alt="Yuki" style={{ width: "260px", height: "320px", objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
+            <Image src="/yuki-portrait.png" alt="Yuki" width={260} height={320} style={{ objectFit: "cover", borderRadius: "12px" }} className="psita-foto mb-4" />
             <p className="font-chalk text-grafite-lapis" style={{ fontSize: "32px", marginBottom: "2px" }}>Yuki</p>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#E6A15C" }}>Pupuki</p>
           </Link>

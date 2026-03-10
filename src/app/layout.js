@@ -2,6 +2,7 @@ import { Roboto_Slab, Nunito } from "next/font/google";
 import localFont from "next/font/local"; 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 import BackToTop from "@/components/BackToTop";
 
 const chalkiez = localFont({
@@ -38,7 +39,7 @@ export default function RootLayout({ children }) {
                 © 2026 Bando Mágico
               </p>
             </div>
-            <img src="/psitas-andando.png" alt="psitas andando" style={{ width: "180px", objectFit: "contain", marginRight: "-300px" }} />
+            <Image src="/psitas-andando.png" alt="psitas andando" width={180} height={80} style={{ objectFit: "contain", marginRight: "-300px" }} />
           </div>
         </footer>
       </body>

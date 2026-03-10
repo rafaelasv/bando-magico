@@ -12,6 +12,7 @@ const imagensModal = [
   "/psita-artista-resultado.png",
   "/psita-artista-resultado2.png",
   "/psita-artista-resultado3.png",
+  "/psita-artista-resultado4.png",
 ];
 
 export default function Gerador() {
