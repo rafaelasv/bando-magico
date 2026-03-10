@@ -32,7 +32,7 @@ export default function Home() {
           {/* Botões dentro do hero */}
           <div className="flex flex-row hero-buttons" style={{ marginTop: "32px", gap: "20px" }}>
             <a href="#conheca-o-bando" className="btn-hero btn-brilhos font-chalk flex items-center justify-center" style={{ backgroundColor: "#E6A15C", color: "#fff", fontSize: "22px", padding: "10px 28px", border: "none", textDecoration: "none" }}>
-              Conhecer a Turma
+              Conhecer o Bando
             </a>
 
             <Link href="/gerador" className="btn-hero font-chalk flex items-center justify-center" style={{ backgroundColor: "transparent", color: "#E6A15C", fontSize: "22px", padding: "10px 28px", border: "2px solid #E6A15C", textDecoration: "none" }}>
