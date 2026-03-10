@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
               <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "13px", color: "#B0A99F" }}>
                 Criado com muito 🧡 e bicadas
               </p>
-              <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "12px", color: "#C8C3BB" }}>
+              <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "12px", color: "#B0A99F" }}>
                 © 2026 Bando Mágico
               </p>
             </div>
