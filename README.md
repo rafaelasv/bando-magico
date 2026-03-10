@@ -21,7 +21,7 @@ Projeto pessoal desenvolvido para praticar React e Tailwind CSS, com foco em ide
 - [x] Páginas individuais de cada calopsita
 - [x] Gerador de nomes
 - [x] Página Sobre
-- [ ] Responsividade mobile
+- [x] Responsividade mobile
 
 ## Como rodar localmente
 
