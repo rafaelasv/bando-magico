@@ -44,7 +44,7 @@ export default function Sobre() {
           </p>
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: "48px" }}>
+        <div className="jujuba-layout" style={{ display: "flex", alignItems: "center", gap: "48px" }}>
           <img
             src="/jujuba-memoriam.jpg"
             alt="Jujuba em aquarela"

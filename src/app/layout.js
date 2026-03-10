@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <BackToTop />
         {children}
         <footer style={{ backgroundColor: "#F9E29C", borderTop: "1px solid #E0DDD6" }}>
-          <div style={{ maxWidth: "760px", margin: "0 auto", padding: "16px 40px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <div className="footer-inner" style={{ maxWidth: "760px", margin: "0 auto", padding: "16px 40px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: "6px" }}>
               <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "13px", color: "#B0A99F" }}>
                 Criado com muito 🧡 e bicadas

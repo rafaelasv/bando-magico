@@ -107,3 +107,52 @@ nav a {
   font-size: 11px;
   opacity: 0.6;
 }
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+
+  /* Hero */
+  .hero-content {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    padding-top: 140px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .hero-buttons {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* Grid de curiosidades */
+  .curiosidades-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .curiosidade-card img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  /* iframe YouTube */
+  .youtube-iframe {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  /* Página sobre - foto + letra */
+  .jujuba-layout {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .jujuba-layout img {
+    width: 260px !important;
+    height: 300px !important;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+}

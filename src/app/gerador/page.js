@@ -62,6 +62,72 @@ export default function Gerador() {
       overflow: "hidden",
     }}>
 
+      {/* MODAL */}
+      {visivel && (
+        <div
+          onClick={() => setVisivel(false)}
+          style={{
+            position: "fixed",
+            inset: 0,
+            backgroundColor: "rgba(0,0,0,0.7)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+          }}
+        >
+          {/* Psita atrás do modal */}
+          <img
+            src="/psita-artista-resultado.png"
+            alt=""
+            style={{
+              position: "absolute",
+              bottom: "calc(50% - 340px)",
+              left: "calc(50% - 560px)",
+              width: "400px",
+              pointerEvents: "none",
+              zIndex: 0,
+            }}
+          />
+
+          <div
+            onClick={e => e.stopPropagation()}
+            style={{ zIndex: 1, position: "relative",
+              backgroundColor: "#F7F5EB",
+              borderRadius: "24px",
+              padding: "48px 64px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "12px",
+              boxShadow: "0 8px 40px rgba(0,0,0,0.15)",
+            }}
+          >
+            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "14px", color: "#B0A99F" }}>
+              o nome da sua psita é...
+            </p>
+            <p className="font-chalk" style={{ fontSize: "80px", color: "#E6A15C", lineHeight: "1" }}>
+              {nomeGerado}
+            </p>
+            <button
+              onClick={() => setVisivel(false)}
+              style={{
+                marginTop: "16px",
+                fontFamily: "'Raleway', sans-serif",
+                fontSize: "13px",
+                color: "#B0A99F",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                letterSpacing: "0.05em",
+              }}
+            >
+              fechar
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Rabiscos decorativos */}
       <img src="/rabisco1.png" alt="" style={{ position: "absolute", top: "100px", right: 0, width: "220px", opacity: 0.6, pointerEvents: "none" }} />
       <img src="/rabisco2.png" alt="" style={{ position: "absolute", bottom: "200px", left: 0, width: "220px", opacity: 0.6, pointerEvents: "none" }} />
@@ -78,9 +144,9 @@ export default function Gerador() {
         {/* Psita artista — fora do frame */}
         <img src="/psita-artista.png" alt="Psita artista" style={{
           position: "absolute",
-          left: "-140px",
+          left: "-240px",
           bottom: "-5px",
-          width: "260px",
+          width: "360px",
           pointerEvents: "none",
         }} />
 
@@ -139,23 +205,6 @@ export default function Gerador() {
             Gerar Nome!
           </button>
 
-          {/* Nome gerado - espaço sempre reservado */}
-          <div style={{
-            opacity: visivel ? 1 : 0,
-            transition: "opacity 0.4s ease",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "4px",
-            minHeight: "100px",
-          }}>
-            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "13px", color: "#6B665F" }}>
-              o nome da sua psita é...
-            </p>
-            <p className="font-chalk" style={{ fontSize: "72px", color: "#E6A15C", lineHeight: "1" }}>
-              {nomeGerado}
-            </p>
-          </div>
 
         </div>
       </div>

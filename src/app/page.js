@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-yellow-100 rounded-full blur-3xl opacity-50 -z-20"></div>
 
         {/* Conteúdo do hero */}
-        <div className="relative z-10 h-full flex flex-col justify-center items-start text-left" style={{ paddingLeft: "200px", paddingTop: "250px" }}>
+        <div className="relative z-10 h-full flex flex-col justify-center items-start text-left hero-content" style={{ paddingLeft: "200px", paddingTop: "250px" }}>
           <h1 className="text-[70px] md:text-[90px] font-normal text-[#E6A15C] font-chalk drop-shadow-md leading-tight">
             O Bando M
             <span className="relative inline-block">
@@ -29,7 +29,7 @@ export default function Home() {
           </p>
 
           {/* Botões dentro do hero */}
-          <div className="flex flex-row" style={{ marginTop: "32px", gap: "20px" }}>
+          <div className="flex flex-row hero-buttons" style={{ marginTop: "32px", gap: "20px" }}>
             <a href="#conheca-o-bando" className="btn-hero btn-brilhos font-chalk flex items-center justify-center" style={{ backgroundColor: "#E6A15C", color: "#fff", fontSize: "22px", padding: "10px 28px", border: "none", textDecoration: "none" }}>
               Conhecer a Turma
             </a>
@@ -101,7 +101,7 @@ export default function Home() {
           </h2>
 
           {/* Curiosidades */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px", maxWidth: "1100px", width: "100%" }}>
+          <div className="curiosidades-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px", maxWidth: "1100px", width: "100%" }}>
 
             {[
               { imagem: "/psita-australia.png", titulo: "Originárias da Austrália", texto: "Vivem em bandos nas savanas e florestas abertas do interior australiano." },
@@ -160,6 +160,7 @@ export default function Home() {
             title="Playlist calopsitas"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            className="youtube-iframe"
             style={{ borderRadius: "16px", border: "none", maxWidth: "100%" }}
           />
         </div>
