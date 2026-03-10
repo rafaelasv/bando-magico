@@ -144,19 +144,25 @@ export default function Home() {
 
       </section>
 
-      {/* SEÇÃO HOMENAGEM - JUJUBA */}
-      <section style={{ backgroundColor: "#E8E6E1", minHeight: "400px" }} className="w-full">
-
-        {/* Conteúdo - a preencher */}
-        <div style={{ padding: "60px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
-          <h2 className="font-chalk" style={{ fontSize: "48px", color: "#6B665F", textAlign: "center" }}>
-            Jujuba
+      {/* SEÇÃO PLAYLIST */}
+      <section style={{ backgroundColor: "#F7F5EB" }} className="w-full">
+        <div style={{ padding: "80px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "32px" }}>
+          <h2 className="font-roboto text-2xl font-bold tracking-widest" style={{ color: "#6B665F", textAlign: "center" }}>
+            ✦ o som do bando ✦
           </h2>
-          <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "15px", color: "#6B665F", textAlign: "center" }}>
-            em memória
+          <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "14px", color: "#B0A99F", textAlign: "center" }}>
+            músicas que calopsitas amam
           </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?list=PLpdNM2xGFxvMRZuV3IoiMbKMGlbGUC51S"
+            title="Playlist calopsitas"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ borderRadius: "16px", border: "none", maxWidth: "100%" }}
+          />
         </div>
-
       </section>
 
     </main>
