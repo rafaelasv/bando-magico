@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const nomes = {
   femea: ["Luna", "Perola", "Jade", "Kiara", "Sol", "Amora", "Nina", "Mel", "Nala", "Cleo", "Fifi", "Bella", "Lola", "Mia", "Coco", "Rubi", "Flora", "Pipoca", "Neve", "Doris", "Cereja", "Diva", "Iris"],
@@ -181,20 +182,18 @@ export default function Gerador() {
         justifyContent: "center",
       }}>
         {/* Psita artista — fora do frame */}
-        <img src="/psita-artista.png" alt="Psita artista" style={{
+        <Image src="/psita-artista.png" alt="Psita artista" width={360} height={360} priority style={{
           position: "absolute",
           left: "-240px",
           bottom: "-5px",
           width: "360px",
+          height: "auto",
           pointerEvents: "none",
         }} />
 
         {/* Frame como imagem de fundo */}
-        <img src="/frame-generator.png" alt="" style={{
-          position: "absolute",
-          top: 0, left: 0,
-          width: "100%",
-          height: "100%",
+        <Image src="/frame-generator.png" alt="" fill priority style={{
+          objectFit: "fill",
           pointerEvents: "none",
         }} />
 
