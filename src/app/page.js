@@ -148,10 +148,10 @@ export default function Home() {
       <section style={{ backgroundColor: "#F7F5EB" }} className="w-full">
         <div style={{ padding: "80px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "32px" }}>
           <h2 className="font-roboto text-2xl font-bold tracking-widest" style={{ color: "#6B665F", textAlign: "center" }}>
-            ✦ o som do bando ✦
+            ✦ O som do bando ✦
           </h2>
           <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "14px", color: "#B0A99F", textAlign: "center" }}>
-            músicas que calopsitas amam
+            Músicas que calopsitas amam aprender
           </p>
           <iframe
             width="560"
