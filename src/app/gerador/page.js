@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 const nomes = {
-  femea: ["Luna", "Pérola", "Jade", "Kiara", "Sol", "Amora", "Nina"],
-  macho: ["Zeca", "Apollo", "Fred", "Nico", "Billy", "Chico", "Zeus"],
-  unissex: ["Piu-piu", "Mochi", "Coco", "Sunny", "Blue", "Pudim"],
+  femea: ["Luna", "Perola", "Jade", "Kiara", "Sol", "Amora", "Nina", "Mel", "Nala", "Cleo", "Fifi", "Bella", "Lola", "Mia", "Coco", "Rubi", "Flora", "Pipoca", "Neve", "Doris", "Cereja", "Diva", "Iris"],
+  macho: ["Zeca", "Apollo", "Fred", "Nico", "Billy", "Chico", "Zeus", "Theo", "Kiwi", "Loki", "Nino", "Pippo", "Ozzy", "Bico", "Caju", "Tuco", "Zico", "Tico", "Rex", "Gus", "Bento", "Nemo", "Curry", "Leo", "Hermes"],
+  unissex: ["Piu-piu", "Mochi", "Coco", "Sunny", "Blue", "Pudim", "Mango", "Pisco", "Nori", "Sushi", "Pipoca", "Tofu", "Nugget", "Oreo", "Biscuit", "Limao", "Gengibre", "Amendoim", "Bolinha", "Farofa", "Waffle", "Cookie", "Chips", "Mostarda"],
 };
 
 const imagensModal = [
