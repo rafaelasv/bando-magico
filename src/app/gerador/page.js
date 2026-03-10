@@ -72,6 +72,11 @@ export default function Gerador() {
       overflow: "hidden",
     }}>
 
+      {/* Preload das imagens do modal */}
+      <div style={{ display: "none" }}>
+        {imagensModal.map(src => <img key={src} src={src} alt="" />)}
+      </div>
+
       {/* MODAL */}
       {visivel && (
         <div
