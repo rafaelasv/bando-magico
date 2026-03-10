@@ -8,18 +8,27 @@ const nomes = {
   unissex: ["Piu-piu", "Mochi", "Coco", "Sunny", "Blue", "Pudim"],
 };
 
+const imagensModal = [
+  "/psita-artista-resultado.png",
+  "/psita-artista-resultado2.png",
+  "/psita-artista-resultado3.png",
+];
+
 export default function Gerador() {
   const [genero, setGenero] = useState(null);
   const [nomeGerado, setNomeGerado] = useState(null);
   const [visivel, setVisivel] = useState(false);
+  const [imagemModal, setImagemModal] = useState(imagensModal[0]);
 
   function gerarNome() {
     if (!genero) return;
     const lista = nomes[genero];
     const nome = lista[Math.floor(Math.random() * lista.length)];
+    const imagem = imagensModal[Math.floor(Math.random() * imagensModal.length)];
     setVisivel(false);
     setTimeout(() => {
       setNomeGerado(nome);
+      setImagemModal(imagem);
       setVisivel(true);
     }, 200);
   }
@@ -78,7 +87,7 @@ export default function Gerador() {
         >
           {/* Psita atrás do modal */}
           <img
-            src="/psita-artista-resultado.png"
+            src={imagemModal}
             alt=""
             style={{
               position: "absolute",
@@ -104,7 +113,7 @@ export default function Gerador() {
             }}
           >
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "14px", color: "#B0A99F" }}>
-              o nome da sua psita é...
+              Que tal o nome...
             </p>
             <p className="font-chalk" style={{ fontSize: "80px", color: "#E6A15C", lineHeight: "1" }}>
               {nomeGerado}
@@ -122,15 +131,13 @@ export default function Gerador() {
                 letterSpacing: "0.05em",
               }}
             >
-              fechar
+              Fechar
             </button>
           </div>
         </div>
       )}
 
       {/* Rabiscos decorativos */}
-      <img src="/rabisco1.png" alt="" style={{ position: "absolute", top: "100px", right: 0, width: "220px", opacity: 0.6, pointerEvents: "none" }} />
-      <img src="/rabisco2.png" alt="" style={{ position: "absolute", bottom: "200px", left: 0, width: "220px", opacity: 0.6, pointerEvents: "none" }} />
 
       {/* Box com frame desenhado */}
       <div style={{
