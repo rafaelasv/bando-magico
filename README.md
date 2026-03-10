@@ -1,4 +1,4 @@
-# O Bando Mágico
+# O Bando Mágico 🧡
 
 Site em homenagem às calopsitas Jujuba, Theo e Yuki.
 
@@ -20,7 +20,7 @@ Projeto pessoal desenvolvido para praticar React e Tailwind CSS, com foco em ide
 - [x] Seção "Conheça o Bando" com cards das psitas
 - [x] Páginas individuais de cada calopsita
 - [x] Gerador de nomes
-- [ ] Página Sobre
+- [x] Página Sobre
 - [ ] Responsividade mobile
 
 ## Como rodar localmente
