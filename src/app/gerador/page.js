@@ -92,7 +92,7 @@ export default function Gerador() {
             style={{
               position: "absolute",
               bottom: "calc(50% - 340px)",
-              left: "calc(50% - 560px)",
+              left: "calc(50% - 620px)",
               width: "400px",
               pointerEvents: "none",
               zIndex: 0,
@@ -104,7 +104,9 @@ export default function Gerador() {
             style={{ zIndex: 1, position: "relative",
               backgroundColor: "#F7F5EB",
               borderRadius: "24px",
-              padding: "48px 64px",
+              padding: "64px 96px",
+              width: "360px",
+              alignItems: "center",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -118,21 +120,45 @@ export default function Gerador() {
             <p className="font-chalk" style={{ fontSize: "80px", color: "#E6A15C", lineHeight: "1" }}>
               {nomeGerado}
             </p>
-            <button
-              onClick={() => setVisivel(false)}
-              style={{
-                marginTop: "16px",
-                fontFamily: "'Raleway', sans-serif",
-                fontSize: "13px",
-                color: "#B0A99F",
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                letterSpacing: "0.05em",
-              }}
-            >
-              Fechar
-            </button>
+            <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
+              <button
+                onClick={() => {
+                  const lista = nomes[genero];
+                  const nome = lista[Math.floor(Math.random() * lista.length)];
+                  const imagem = imagensModal[Math.floor(Math.random() * imagensModal.length)];
+                  setNomeGerado(nome);
+                  setImagemModal(imagem);
+                }}
+                style={{
+                  fontFamily: "'Raleway', sans-serif",
+                  fontSize: "13px",
+                  fontWeight: "700",
+                  color: "#fff",
+                  backgroundColor: "#E6A15C",
+                  border: "none",
+                  borderRadius: "20px",
+                  padding: "8px 20px",
+                  cursor: "pointer",
+                  letterSpacing: "0.05em",
+                }}
+              >
+                Gerar outro nome
+              </button>
+              <button
+                onClick={() => setVisivel(false)}
+                style={{
+                  fontFamily: "'Raleway', sans-serif",
+                  fontSize: "13px",
+                  color: "#B0A99F",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  letterSpacing: "0.05em",
+                }}
+              >
+                Fechar
+              </button>
+            </div>
           </div>
         </div>
       )}
