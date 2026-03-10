@@ -28,6 +28,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.polaroid {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.04) !important;
+  box-shadow: 0 10px 32px rgba(80,50,20,0.2) !important;
+}
+
 body {
   margin: 0;
   padding: 0;

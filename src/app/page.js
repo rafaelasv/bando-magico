@@ -145,25 +145,57 @@ export default function Home() {
 
       </section>
 
-      {/* SEÇÃO PLAYLIST */}
+      {/* SEÇÃO GALERIA */}
       <section style={{ backgroundColor: "#F7F5EB" }} className="w-full">
-        <div style={{ padding: "80px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "32px" }}>
-          <h2 className="font-roboto text-2xl font-bold tracking-widest" style={{ color: "#6B665F", textAlign: "center" }}>
-            ✦ O som do bando ✦
-          </h2>
-          <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "14px", color: "#B0A99F", textAlign: "center" }}>
-            Músicas que calopsitas amam aprender
-          </p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/videoseries?list=PLpdNM2xGFxvMRZuV3IoiMbKMGlbGUC51S"
-            title="Playlist calopsitas"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="youtube-iframe"
-            style={{ borderRadius: "16px", border: "none", maxWidth: "100%" }}
-          />
+        <div style={{ padding: "80px 40px 100px", display: "flex", flexDirection: "column", alignItems: "center", gap: "48px" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
+            <h2 className="font-roboto text-2xl font-bold tracking-widest" style={{ color: "#6B665F", textAlign: "center" }}>
+              ✦ Momentos do bando ✦
+            </h2>
+            <div style={{ width: "80px", borderTop: "3px dashed #F9E29C" }}></div>
+          </div>
+
+          <div style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "32px",
+            maxWidth: "1100px",
+          }}>
+            {[
+              { src: "/theo-picture.jpg", caption: "Theo", rotate: "-1.5deg" },
+              { src: "/yuki-picture.png", caption: "Yuki", rotate: "2.5deg" },
+              { src: "/theo-picture2.jpg", caption: "Theo", rotate: "2.5deg" },
+              { src: "/jujuba-memoriam.jpg", caption: "Juju, sempre aqui ✦", rotate: "-2deg" },
+              { src: "/theo-picture4.jpg", caption: "Theo", rotate: "1deg" },
+              { src: "/yuki-picture2.png", caption: "Yuki", rotate: "-1deg" },
+            ].map(({ src, caption, rotate }) => (
+              <div key={src} className="polaroid" style={{
+                backgroundColor: "#fff",
+                padding: "14px 14px 40px",
+                boxShadow: "0 4px 18px rgba(80,50,20,0.13)",
+                transform: `rotate(${rotate})`,
+              }}>
+                <Image
+                  src={src}
+                  alt={caption}
+                  width={192}
+                  height={192}
+                  style={{ objectFit: "cover", width: "192px", height: "192px", display: "block" }}
+                />
+                <p style={{
+                  fontFamily: "'Raleway', sans-serif",
+                  fontSize: "13px",
+                  color: "#8b6340",
+                  textAlign: "center",
+                  marginTop: "12px",
+                  fontStyle: "italic",
+                }}>
+                  {caption}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
