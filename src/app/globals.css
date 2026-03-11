@@ -122,16 +122,6 @@ nav a {
 @media (max-width: 768px) {
 
   /* Gerador */
-  .gerador-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .gerador-box {
-    transform: none !important;
-    width: 340px !important;
-    height: 480px !important;
-  }
   .gerador-content {
     padding: 16px !important;
     gap: 10px !important;

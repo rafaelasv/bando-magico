@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const nomes = {
@@ -21,6 +21,14 @@ export default function Gerador() {
   const [nomeGerado, setNomeGerado] = useState(null);
   const [visivel, setVisivel] = useState(false);
   const [imagemModal, setImagemModal] = useState(imagensModal[0]);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   function gerarNome() {
     if (!genero) return;
@@ -174,11 +182,10 @@ export default function Gerador() {
       {/* Rabiscos decorativos */}
 
       {/* Box com frame desenhado */}
-      <div className="gerador-wrapper">
-      <div className="gerador-box" style={{
+      <div style={{
         position: "relative",
-        width: "600px",
-        height: "720px",
+        width: isMobile ? "360px" : "600px",
+        height: isMobile ? "432px" : "720px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -194,7 +201,12 @@ export default function Gerador() {
         }} />
 
         {/* Frame como imagem de fundo */}
-        <Image src="/frame-generator.png" alt="" fill priority style={{
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/frame-generator.png" alt="" style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
           objectFit: "fill",
           pointerEvents: "none",
         }} />
@@ -247,7 +259,6 @@ export default function Gerador() {
 
 
         </div>
-      </div>
       </div>
 
     </main>
