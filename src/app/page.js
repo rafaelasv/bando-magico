@@ -6,17 +6,17 @@ export default function Home() {
     <main className="flex flex-col relative overflow-hidden bg-white">
       
       {/* HERO SECTION COM IMAGEM DE FUNDO */}
-      <section className="relative w-full min-h-screen bg-cover bg-no-repeat" style={{backgroundImage: "url('/header-psitas.png')", backgroundPosition: "center 40%"}}>
+      <section className="relative w-full min-h-screen bg-cover bg-no-repeat hero-section" style={{backgroundImage: "url('/header-psitas.png')", backgroundPosition: "center 40%"}}>
 
         {/* Overlay para legibilidade */}
-        <div className="absolute inset-0 bg-white/45"></div>
+        <div className="absolute inset-0 bg-white/45 hero-overlay"></div>
 
         {/* Círculo de brilho ao fundo */}
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-yellow-100 rounded-full blur-3xl opacity-50 -z-20"></div>
 
         {/* Conteúdo do hero */}
         <div className="relative z-10 h-full flex flex-col justify-center items-start text-left hero-content" style={{ paddingLeft: "200px", paddingTop: "250px" }}>
-          <h1 className="text-[70px] md:text-[90px] font-normal text-[#E6A15C] font-chalk drop-shadow-md leading-tight">
+          <h1 className="text-[52px] md:text-[90px] font-normal text-[#E6A15C] font-chalk drop-shadow-md leading-tight">
             O Bando M
             <span className="relative inline-block">
               a

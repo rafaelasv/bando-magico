@@ -41,6 +41,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -120,11 +121,70 @@ nav a {
 /* RESPONSIVIDADE MOBILE */
 @media (max-width: 768px) {
 
+  /* Gerador */
+  .gerador-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .gerador-box {
+    transform: none !important;
+    width: 340px !important;
+    height: 480px !important;
+  }
+  .gerador-content {
+    padding: 16px !important;
+    gap: 10px !important;
+  }
+  .gerador-content h1 {
+    font-size: 22px !important;
+  }
+  .gerador-content p {
+    white-space: normal !important;
+    text-align: center !important;
+    max-width: 240px !important;
+    line-height: 1.4 !important;
+  }
+  .gerador-content button {
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+  }
+  .gerador-content button[style*="28px"] {
+    font-size: 16px !important;
+    padding: 8px 24px !important;
+  }
+  .gerador-modal {
+    width: 280px !important;
+    padding: 40px 48px !important;
+  }
+  .gerador-modal .font-chalk {
+    font-size: 56px !important;
+  }
+  .gerador-psita {
+    display: none !important;
+  }
+  .gerador-main {
+    padding-top: 100px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Botão voltar ao topo */
+  button[aria-label="Voltar ao topo"] {
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+
   /* Hero */
+  .hero-section {
+    background-position: left 40% !important;
+  }
+  .hero-overlay {
+    background-color: rgba(255, 255, 255, 0.88) !important;
+  }
   .hero-content {
     padding-left: 24px !important;
     padding-right: 24px !important;
-    padding-top: 140px !important;
+    padding-top: 160px !important;
     align-items: center !important;
     text-align: center !important;
   }
@@ -163,5 +223,8 @@ nav a {
     flex-direction: column !important;
     align-items: center !important;
     gap: 12px !important;
+  }
+  .footer-inner img {
+    display: none !important;
   }
 }

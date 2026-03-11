@@ -60,7 +60,7 @@ export default function Gerador() {
   };
 
   return (
-    <main style={{
+    <main className="gerador-main" style={{
       minHeight: "100vh",
       backgroundColor: "#F7F5EB",
       paddingTop: "120px",
@@ -108,11 +108,12 @@ export default function Gerador() {
 
           <div
             onClick={e => e.stopPropagation()}
+            className="gerador-modal"
             style={{ zIndex: 1, position: "relative",
               backgroundColor: "#F7F5EB",
               borderRadius: "24px",
-              padding: "64px 96px",
-              width: "360px",
+              padding: "40px 48px",
+              width: "min(280px, 85vw)",
               alignItems: "center",
               display: "flex",
               flexDirection: "column",
@@ -124,7 +125,7 @@ export default function Gerador() {
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: "14px", color: "#B0A99F" }}>
               Que tal o nome...
             </p>
-            <p className="font-chalk" style={{ fontSize: "80px", color: "#E6A15C", lineHeight: "1" }}>
+            <p className="font-chalk" style={{ fontSize: "clamp(48px, 14vw, 80px)", color: "#E6A15C", lineHeight: "1" }}>
               {nomeGerado}
             </p>
             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
@@ -173,7 +174,8 @@ export default function Gerador() {
       {/* Rabiscos decorativos */}
 
       {/* Box com frame desenhado */}
-      <div style={{
+      <div className="gerador-wrapper">
+      <div className="gerador-box" style={{
         position: "relative",
         width: "600px",
         height: "720px",
@@ -182,7 +184,7 @@ export default function Gerador() {
         justifyContent: "center",
       }}>
         {/* Psita artista — fora do frame */}
-        <Image src="/psita-artista.png" alt="Psita artista" width={360} height={360} priority style={{
+        <Image src="/psita-artista.png" alt="Psita artista" width={360} height={360} priority className="gerador-psita" style={{
           position: "absolute",
           left: "-240px",
           bottom: "-5px",
@@ -198,7 +200,7 @@ export default function Gerador() {
         }} />
 
         {/* Conteúdo dentro do frame */}
-        <div style={{
+        <div className="gerador-content" style={{
           position: "relative",
           display: "flex",
           flexDirection: "column",
@@ -245,6 +247,7 @@ export default function Gerador() {
 
 
         </div>
+      </div>
       </div>
 
     </main>
