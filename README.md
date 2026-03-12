@@ -4,7 +4,7 @@ Site em homenagem às calopsitas Jujuba, Theo e Yuki.
 
 ## Sobre o projeto
 
-Projeto pessoal desenvolvido para praticar React e Tailwind CSS, com foco em identidade visual fofa e ilustrada. As ilustrações são autorais.
+Projeto pessoal desenvolvido para praticar React e Tailwind CSS, com foco em identidade visual fofa e ilustrada.
 
 ## Tecnologias
 
